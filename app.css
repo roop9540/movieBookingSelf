@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: blue;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    list-style: none;
+    
+}
+.movie-img-wrapper{
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+}
+.movie-holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.loader{
+    text-align: center;
+    margin: 2rem;
+}
+
+.booking-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-columns: repeat(4,70px);
+    gap: 1rem;
+}
+
+#booker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    
+}
+
+#booker-grid-holder{
+    display: flex;
+    gap: 6rem;
+    margin: 2rem;
+}
+
+.grid-cell{
+    display: flex;
+    
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+.unavailable-seat{
+    background-color: red;
+    pointer-events: none;
+}
+
+.available-seat{
+    background-color: green;
+}
+.selected-seat{
+    border: 3px solid black;
+}
+
+
+
+.d-none{
+    display: none;
+}
+.v-none{
+    visibility: hidden;
+}
+
